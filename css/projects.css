@@ -26,7 +26,6 @@ body {
 .image {
     width: 32px;
     height: 32px;
-    color: red;
 }
 .nav-link {
     text-decoration: none;
@@ -35,6 +34,7 @@ body {
     padding: 5px;
     color: white;
     margin-right: 20px;
+    flex-shrink: 1;
 }
 .nav-link:hover {
     opacity: 0.3;
