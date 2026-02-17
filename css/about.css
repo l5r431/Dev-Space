@@ -26,6 +26,8 @@ body {
 }
 .nav-link:hover {
     opacity: 0.4;
+    transform: scale(0.1);
+    transition-duration: 0.3s;
 }
 #header {
     color: white;
@@ -152,7 +154,7 @@ span {
     margin: auto;
 }
 .site-footer {
-    background-color: rgb(226, 179, 179);
+    background-color: rgba(77, 77, 77, 0.936);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 18px;
 }
