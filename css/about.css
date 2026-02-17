@@ -11,6 +11,7 @@ body {
     border-radius: 5px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .logo {
     color: rgb(255, 255, 255);
@@ -47,6 +48,11 @@ body {
     height: 600px;
     border-radius: 30%;
 }
+.profile:hover {
+    transform: scale(1.03);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
 #caption {
     color: white;
     text-align: center;
@@ -63,6 +69,11 @@ body {
     align-items: center;
     line-height: 25px;
     flex-wrap: wrap;
+}
+.content:hover {
+    transform: scale(1.03);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .content-meta {
     margin: 0 10px;
@@ -120,6 +131,11 @@ span {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .personal {
     background-color: rgb(21, 13, 15);
@@ -187,9 +203,11 @@ span {
     font-size: 1.3rem;
     padding: 5px;
 }
-.fa:hover {
-    opacity: 0.4;
-}
 .fa {
     padding: 5px;
+}
+.fa:hover {
+    transform: scale(1.08);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }

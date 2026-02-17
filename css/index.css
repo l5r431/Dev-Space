@@ -2,11 +2,12 @@ body {
     background-color: #000000c0;
 }
 .site-header {
-    background-color: rgba(0, 0, 0, 0.646);
+    background-color: #252020;
     border: 2px solid black;
     border-radius: 20px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .navbar {
     background: rgba(0, 0, 0, 0.749);
@@ -25,19 +26,23 @@ body {
     color: #ffffff;
     margin: 50px;
 }
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
 .nav-link {
     padding: 5px;
-    border: 1px solid soft #ffffff;
+    border: none;
     border-radius: 10px;
     background-color: #ffffff;
     text-decoration: none;
     color: black;
-    margin-right: 10px;
 }
 .nav-link:hover {
-    opacity: 0.5;
-    transform: scale(0.1);
-    transition-duration: 0.7s;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
 }
 #header {
     text-align: center;
@@ -72,6 +77,11 @@ body {
     background-color: #252020;
     border: 1px solid rgb(44, 41, 41);
     border-radius: 15px;
+}
+.card:hover {
+    transform: scale(1.06);
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 .card-header {
     text-align: center;
@@ -109,8 +119,10 @@ body {
     padding: 5px;
 }
 .btn:hover {
-    opacity: 0.4;
     color: rgb(201, 168, 168);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 .site-footer {
     background-color: rgba(0, 0, 0, 0.747);
@@ -130,7 +142,7 @@ body {
 }
 .fa-square-github, .fa-tiktok {
     font-size: 1.6rem;
-    color: black;
+    color: white;
     padding: 10px;
 }
 .fa-discord, .fa-envelope {
@@ -160,4 +172,12 @@ body {
     color: white;
     font-weight: bold;
     padding: 3px;
+}
+.fa-solid:hover {
+    transform: scale(1.6);
+    transition-duration: 0.8s;
+}
+.fa-brands:hover {
+    transform: scale(1.6);
+    transition-duration: 0.8s;
 }
