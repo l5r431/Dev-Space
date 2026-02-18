@@ -44,6 +44,7 @@ body {
 .nav-link:hover {
     transform: scale(1.1);
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 #header {
     text-align: center;

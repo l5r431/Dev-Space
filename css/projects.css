@@ -15,7 +15,6 @@ body {
     position: sticky;
     z-index: 1;
     top: 0;
-    flex-wrap: wrap;
 }
 .logo {
     font-weight: 900;
@@ -27,17 +26,23 @@ body {
     width: 32px;
     height: 32px;
 }
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
 .nav-link {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    padding: 5px;
+    border: none;
+    padding: 10px;
     color: white;
-    margin-right: 20px;
-    flex-shrink: 1;
 }
 .nav-link:hover {
-    opacity: 0.3;
+    transform: scale(1.18);
+    transition-duration: 0.4s;
     cursor: pointer;
 }
 #header {
