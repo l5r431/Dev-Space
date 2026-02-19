@@ -1,5 +1,6 @@
 body {
     background-color: rgb(10, 6, 6);
+    margin: 0;
 }
 .site-header {
     height: 50px;
@@ -13,11 +14,15 @@ body {
     top: 0;
     z-index: 1;
 }
+hr {
+    width: 80%;
+}
 .logo {
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 1.7rem;
     padding: 10px;
+    text-decoration: none;
 }
 .nav-link {
     color: white;

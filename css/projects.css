@@ -1,5 +1,6 @@
 body {
     background-color: rgba(0, 0, 0, 0.767);
+    margin: 0;
 }
 .site-header {
     height: 50px;
@@ -17,14 +18,15 @@ body {
     top: 0;
 }
 .logo {
-    font-weight: 900;
-    font-size: 2.3rem;
-    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    gap: 10px;
     color: blue;
-}
-.image {
-    width: 32px;
-    height: 32px;
 }
 .navbar {
     display: flex;
@@ -39,6 +41,8 @@ body {
     border: none;
     padding: 10px;
     color: white;
+    position: relative;
+    right: 50px;
 }
 .nav-link:hover {
     transform: scale(1.18);
@@ -53,7 +57,7 @@ body {
 }
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -104,6 +108,10 @@ body {
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 20px;
+}
+.meta-meta:hover {
+    transform: scaleX(1.15);
+    transition-duration: 0.5s;
 }
 #meta-header {
     color: white;
