@@ -1,6 +1,7 @@
 body {
     background-color: #000000c0;
     margin: 0;
+    padding: 0;
 }
 .site-header {
     padding: 1rem 2rem;
@@ -57,21 +58,22 @@ hr {
 }
 .cards {
     display: flex;
-    gap: 10px;
+    gap: 0.5em;
     justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 .card {
-    display: column;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 300px;
-    width: 400px;
+    height: auto;
+    width: 48ch;
     background-color: #252020;
     border: 1px solid rgb(44, 41, 41);
     border-radius: 15px;
+    padding: 0.5em 0.7em;
 }
 .card:hover {
     transform: scale(1.06);
@@ -102,16 +104,14 @@ hr {
     color: darkorange;
 }
 .btn {
-    display: block;
-    margin: 15px auto 0;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 5px;
+    padding: 0.5em 1em;
 }
 .btn:hover {
     color: rgb(201, 168, 168);
@@ -129,44 +129,35 @@ hr {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    margin: 1px;
 }
-.footer-content {
+.footer-icons {
     text-align: center;
-    margin: 0;
+}
+#copyright {
+    text-align: right;
+    color: #ffff;
+    font-weight: bold;
+    padding: 0 1em;
 }
 .fa-square-github, .fa-tiktok {
     font-size: 1.6rem;
     color: white;
-    padding: 10px;
 }
 .fa-discord, .fa-envelope {
     font-size: 1.6rem;
     color: blue;
-    padding: 10px;
 }
 .fa-instagram {
     color: rgb(197, 39, 92);
     font-size: 1.6rem;
-    padding: 10px;
 }
 .fa-telegram {
     color: aqua;
     font-size: 1.6rem;
-    padding: 10px;
 }
 .fa-phone {
     color: green;
     font-size: 1.6rem;
-    padding: 10px;
-}
-.footer-meta {
-    display: flex;
-    justify-content: right;
-    text-align: right;
-    color: white;
-    font-weight: bold;
-    padding: 3px;
 }
 .fa-solid:hover {
     transform: scale(1.6);
@@ -175,4 +166,7 @@ hr {
 .fa-brands:hover {
     transform: scale(1.6);
     transition-duration: 0.8s;
+}
+.fa-solid, .fa-brands {
+    padding: 0em 0.4em;
 }
